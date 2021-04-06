@@ -47,20 +47,7 @@ public class MapsFragment extends Fragment {
 
 
             mMap.setOnCameraMoveListener(() -> {
-//                VisibleRegion vr = mMap.getProjection().getVisibleRegion();
-//
-//                double swLong = vr.latLngBounds.southwest.longitude;
-//                double swLat = vr.latLngBounds.southwest.latitude;
-//
-//                double neLat = vr.latLngBounds.northeast.latitude;
-//                double neLong = vr.latLngBounds.northeast.longitude;
-//
-//
-//                System.out.println("swLong " + swLong);
-//                System.out.println("swLat " + swLat);
-//                System.out.println("neLong " + neLong);
-//                System.out.println("neLat " + neLat);
-//                findMarker(swLong, swLat, neLat, neLong);
+
                 CameraPosition position = mMap.getCameraPosition();
                 url.set(url + "(" + position.target.longitude + "," + position.target.latitude + ")");
                 System.out.println(position);
