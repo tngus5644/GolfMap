@@ -45,6 +45,7 @@ public class MapsFragment extends Fragment {
             mMap.animateCamera(CameraUpdateFactory.zoomTo(17.0f));
 
 
+
             //화면을 움직였을때 위도, 경도 받아오고, API를 요청하여 지도상의 골프장 정보 불러오기.
             mMap.setOnCameraMoveListener(() -> {
 //                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(cameraPosition, zoomCount));
